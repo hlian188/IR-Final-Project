@@ -14,7 +14,7 @@ Usage:
 
 Install libraries (if not already installed) using:
 
-``pip install nltk``
+``pip install name_library``
 
-Executable notebook at: URL
+Executable notebook at: https://github.com/hlian188/IR-Final-Project/blob/main/Text%20processing.ipynb
 
