@@ -8,13 +8,41 @@ BRAYAN GONZÁLEZ **u172820**
 
 
 
-##### Deliverable 1:
-
 Usage:
 
 Install libraries (if not already installed) using:
 
 ``pip install name_library``
 
-Executable notebook at: https://github.com/hlian188/IR-Final-Project/blob/main/Text%20processing.ipynb
+##### Deliverable 1:
+
+You can donwload the corresponding notebook, by going to the RELEASE TAG: **IRWA-2021-final-project-part-1**
+
+Then donwload the source code as ZIP
+
+The notebook to execute is: **Text processing.ipynb**
+
+**Deliverable 2:**
+
+You can donwload the corresponding notebook, by going to the RELEASE TAG: **IRWA-2021-final-project-part-2**
+
+Then donwload the source code as ZIP
+
+The notebook to execute is: **indexing_evaluation.ipynb**
+
+**Deliverable 3:**
+
+You can donwload the corresponding notebook, by going to the RELEASE TAG: **IRWA-2021-final-project-part-3**
+
+Then donwload the source code as ZIP
+
+The notebook to execute is: 
+
+**Deliverable 4:**
+
+You can donwload the corresponding notebook, by going to the RELEASE TAG: **IRWA-2021-final-project-part-4**
+
+Then donwload the source code as ZIP
+
+The notebook to execute is: 
 
