@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block page_title %}{{ page_title }}{% endblock %}
+{% block content %}
+    Quick sample...
+    <hr>
+    {% for doc in clicks_data %}
+        <div class="pb-3">
+            <div class="">
+                {{ doc.title }}
+            </div>
+            <div class="">
+            </div>
+            <div class="">
+                {{ doc.doc_date }} — {{ doc.description }}
+            </div>
+
+        </div>
+
+    {% endfor %}
+{% endblock %}
+
+
+</body>
+</html>
