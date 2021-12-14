@@ -24,6 +24,7 @@ def _load_corpus_as_dataframe(path):
     :return:
     """
     json_data = load_json_file(path)
+    print("here)")
     tweets_df = _load_tweets_as_dataframe(json_data)
     _clean_hashtags_and_urls(tweets_df)
     # Rename columns to obtain: Tweet | Username | Date | Hashtags | Likes | Retweets | Url | Language

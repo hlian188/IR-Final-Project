@@ -1,5 +1,6 @@
 import os
 from json import JSONEncoder
+import pickle
 
 # pip install httpagentparser
 import httpagentparser  # for getting the user agent as json
@@ -11,6 +12,8 @@ from myapp.analytics.analytics_data import AnalyticsData, ClickedDoc
 from myapp.search.load_corpus import load_corpus
 from myapp.search.objects import Document, StatsDocument
 from myapp.search.search_engine import SearchEngine
+
+from myapp.core.utils import load_json_file
 
 
 # *** for using method to_json in objects ***
@@ -37,17 +40,17 @@ search_engine = SearchEngine()
 # instantiate our in memory persistence
 analytics_data = AnalyticsData()
 
-# print("current dir", os.getcwd() + "\n")
-# print("__file__", __file__ + "\n")
-full_path = os.path.realpath(__file__)
-path, filename = os.path.split(full_path)
-print(path + ' --> ' + filename + "\n")
-# load documents corpus into memory.
-#file_path = path + "/tweets-data-who.json"
-file_path = path + "/dataset_tweets_WHO.txt"
 
 # file_path = "../../tweets-data-who.json"
-corpus = load_corpus(file_path)
+#corpus = load_corpus(file_path)
+infile = open('files/inverted_index','rb')
+new_dict = pickle.load(infile)
+infile.close()
+
+print(new_dict['index'])
+print("ok")
+corpus = load_json_file(file_path)
+print(corpus)
 print("loaded corpus. first elem:", list(corpus.values())[0])
 
 
