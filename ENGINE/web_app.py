@@ -73,6 +73,9 @@ def index():
 
     print(session)
 
+    session['user_ip'] = user_ip
+    session['agent'] = agent
+
     return render_template('index.html', page_title="Welcome")
 
 
@@ -171,9 +174,18 @@ def dashboard():
     visited_docs.sort(key=lambda doc: doc.counter, reverse=True)
     queries.sort(key=lambda q: q.counter, reverse=True)
 
+    # Get IP and Agent
+    user_ip = session['user_ip']
+    agent = session['agent']
+
+    os = agent['platform']['name']
+    browser = agent['browser']['name']
+
     for doc in visited_docs: print(doc)
     for q in queries: print(q)
-    return render_template('dashboard.html', visited_docs=visited_docs, queries=queries)
+    return render_template('dashboard.html', visited_docs=visited_docs,
+                           queries=queries, ip=user_ip, user_os=os,
+                           user_browser=browser)
 
 
 @app.route('/sentiment')
