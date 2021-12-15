@@ -29,10 +29,24 @@
         const query_freq = {{ queries | tojson | safe }}
     </script>
 
+    <div><a href="#" onclick="history.go(-1)">Go Back</a></div>
+    <div><a href="/" >Make another search</a></div>
+    <hr>
+
+    <h5> User details</h5>
+    <p> Your details are:</p>
+    <p> You are using this search engine with {{ user_browser }} using {{ user_os }}
+        operating system, with IP address: {{ ip }}
+    </p>
+
     <h5>Ranking of Visited Documents</h5>
+    <p>Here you have the information regarding the number of times a document has been visited
+    </p>
     <canvas id="dailyVisits" width="400" height="400"></canvas>
     <hr>
     <h5>Query frequency</h5>
+    <p>Here you have the information regarding the number of times a query has been searched
+    </p>
     <canvas id="qFreq" width="400" height="400"></canvas>
 
 
