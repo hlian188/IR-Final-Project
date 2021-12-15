@@ -44,5 +44,5 @@ You can donwload the corresponding notebook, by going to the [RELEASE TAG](https
 
 Then donwload the source code as ZIP
 
-** In order to execute the project, you have to use the directory called '/ENGINE'**
+**In order to execute the project, you have to use the directory called '/ENGINE'**
 
