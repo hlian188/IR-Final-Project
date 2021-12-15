@@ -46,3 +46,6 @@ Then donwload the source code as ZIP
 
 **In order to execute the project, you have to use the directory called '/ENGINE'**
 
+NOTE you may need to install some libraries, use: 
+pip install Flask pandas nltk faker httpagentparser
+
